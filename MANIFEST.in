@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hkm_amd *.css
+recursive-include hkm_amd *.csv
+recursive-include hkm_amd *.html
+recursive-include hkm_amd *.ico
+recursive-include hkm_amd *.js
+recursive-include hkm_amd *.json
+recursive-include hkm_amd *.md
+recursive-include hkm_amd *.png
+recursive-include hkm_amd *.py
+recursive-include hkm_amd *.svg
+recursive-include hkm_amd *.txt
+recursive-exclude hkm_amd *.pyc
