@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:issue",
+ "creation": "2023-10-04 19:39:26.668042",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "requested_by",
+  "date",
+  "time",
+  "issue",
+  "description",
+  "imagevideo"
+ ],
+ "fields": [
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Requested By",
+   "options": "ABCD\nADCD\nADKD\nADSD\nAGVD\nAKMD\nAMGD\nAMKD\nAMVD\nAPJD\nASTD\nDBKD\nDDRD\nGSYD\nGVAD\nHSKD\nJASD\nKJVD\nKMND\nKRCD\nKRKD\nMHHD\nMAND\nNBRD\nPDPD\nPRMD\nPTRD\nRNND\nRSPD\nRYRD\nSCSD\nSBSD\nSDGD\nSMCD\nSTKD\nSUKD\nUGSD\nVRPD\nVSND\nVTND",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issue",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "imagevideo",
+   "fieldtype": "Attach",
+   "label": "Image/Video"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-04 20:08:36.277281",
+ "modified_by": "Administrator",
+ "module": "Facility",
+ "name": "Maintenance Request",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

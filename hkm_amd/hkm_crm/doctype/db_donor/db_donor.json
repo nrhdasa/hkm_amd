@@ -1,0 +1,239 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:mobile_no",
+ "creation": "2023-10-16 21:34:52.893351",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "donor_profile_section",
+  "naming_series",
+  "first_name",
+  "mobile_no",
+  "source",
+  "age",
+  "column_break_ye9gi",
+  "gender",
+  "date_of_birth",
+  "email",
+  "pan",
+  "address_section",
+  "address",
+  "city",
+  "pincode",
+  "extra_details",
+  "education",
+  "occupation",
+  "column_break_t4tqg",
+  "gotra",
+  "nakshatra",
+  "family_members",
+  "husband",
+  "wife",
+  "son",
+  "column_break_64re6",
+  "daughter",
+  "relative",
+  "donor_activity",
+  "sms_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "donor_profile_section",
+   "fieldtype": "Section Break",
+   "label": "Donor Profile"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Series",
+   "options": "ONL_DNR-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "options": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No",
+   "options": "Phone",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_ye9gi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address details"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "extra_details",
+   "fieldtype": "Section Break",
+   "label": "Extra Details"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Data",
+   "label": "Education"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "column_break_t4tqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gotra",
+   "fieldtype": "Data",
+   "label": "Gotra"
+  },
+  {
+   "fieldname": "nakshatra",
+   "fieldtype": "Data",
+   "label": "Nakshatra"
+  },
+  {
+   "fieldname": "family_members",
+   "fieldtype": "Section Break",
+   "label": "Family Members"
+  },
+  {
+   "fieldname": "husband",
+   "fieldtype": "Data",
+   "label": "Husband"
+  },
+  {
+   "fieldname": "wife",
+   "fieldtype": "Data",
+   "label": "Wife"
+  },
+  {
+   "fieldname": "son",
+   "fieldtype": "Data",
+   "label": "Son"
+  },
+  {
+   "fieldname": "column_break_64re6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "daughter",
+   "fieldtype": "Data",
+   "label": "Daughter"
+  },
+  {
+   "fieldname": "relative",
+   "fieldtype": "Data",
+   "label": "Realative"
+  },
+  {
+   "fieldname": "donor_activity",
+   "fieldtype": "Tab Break",
+   "label": "Donor Activity",
+   "show_dashboard": 1
+  },
+  {
+   "fieldname": "sms_count",
+   "fieldtype": "Data",
+   "label": "SMS Count"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Donor SMS",
+   "link_fieldname": "mobile_no"
+  }
+ ],
+ "modified": "2023-10-16 21:48:56.555992",
+ "modified_by": "Administrator",
+ "module": "HKM CRM",
+ "name": "DB Donor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}
