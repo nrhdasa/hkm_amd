@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-07 12:40:33.084469",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_image",
+  "column_break_oifi",
+  "section_break_kkwg",
+  "image",
+  "column_break_vlqx",
+  "personal_info_section",
+  "title",
+  "date_of_birth",
+  "email",
+  "residential_address",
+  "educational_qualification",
+  "mother_tongue",
+  "column_break_nguk",
+  "mobile_no",
+  "age",
+  "gender",
+  "area",
+  "occupation",
+  "skills",
+  "section_break_1sk7",
+  "initiated_name",
+  "current_preacher",
+  "course",
+  "ka_id",
+  "column_break_xkxv",
+  "ashraya_level",
+  "ng_deities",
+  "family_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Legal Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ashraya_level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ashraya Level",
+   "options": "Sevak\nSadhak\nUpasak\nCharnashray\nDiksha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ka_id",
+   "fieldtype": "Data",
+   "label": "KA ID"
+  },
+  {
+   "fieldname": "family_id",
+   "fieldtype": "Data",
+   "label": "Family ID"
+  },
+  {
+   "fieldname": "initiated_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Initiated Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No.",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_tongue",
+   "fieldtype": "Data",
+   "label": "Mother Tongue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Data",
+   "label": "Educational Qualification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Data",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Small Text",
+   "label": "Residential Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Select",
+   "label": "Course",
+   "options": "GLC\nGAC\nSR\nNone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_preacher",
+   "fieldtype": "Data",
+   "label": "Current Preacher",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ng_deities",
+   "fieldtype": "Select",
+   "label": "NG Deities",
+   "options": "Yes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personal_info_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Info"
+  },
+  {
+   "fieldname": "column_break_nguk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xkxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1sk7",
+   "fieldtype": "Section Break",
+   "label": "Spiritual Info"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "user_image",
+   "fieldtype": "HTML",
+   "label": "User Image",
+   "options": "<div style=\"display: flex; align-items: center;\">\n\n    <div style=\"margin-right: 20px;\">\n        <img src=\"{{ doc.image }}\" alt=\"Image\" style=\"max-width: 100%; max-height: 150px;\">\n    </div>\n\n    <div class=\"print-heading\" style=\"height: 80px; border-bottom: none; display: flex; align-items: center;\">\n        <div class=\"left sbox\" style=\"margin-top: 20px;\">\n            <h2 style=\"font-size: 50px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;\">\n                {{ doc.initiated_name }}\n            </h2>\n        </div>\n    </div>\n\n</div>\n"
+  },
+  {
+   "fieldname": "column_break_oifi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kkwg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vlqx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-07 20:25:11.106144",
+ "modified_by": "Administrator",
+ "module": "Krishna Ashray",
+ "name": "KA Devotee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
